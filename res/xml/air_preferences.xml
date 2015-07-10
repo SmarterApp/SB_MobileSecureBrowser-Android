@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <PreferenceCategory android:summary="General Settings"
+        android:title="Secure Browser Settings">
+        
+        <ListPreference
+        android:key="@string/pref_default_url"
+        android:summary="The default url"
+        android:title="Default Location"
+        android:dialogTitle="Select a default location"
+        android:entries="@array/default_url_titles"
+        android:entryValues="@array/default_urls"
+        android:defaultValue="http://clients.mindgrub.com/AIR/" />
+        
+    </PreferenceCategory>
+    
+    
+</PreferenceScreen>
+

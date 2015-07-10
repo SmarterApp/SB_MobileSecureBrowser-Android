@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="default_url_titles">
+	    <item>Test Page</item>
+	    <item>Documentation Page</item>
+	</string-array>
+	
+	<string-array name="default_urls">
+	    <item>http://clients.mindgrub.com/AIR/</item>
+	    <item>http://clients.mindgrub.com/AIR/Documentation</item>
+	</string-array>
+   
+
+</resources>

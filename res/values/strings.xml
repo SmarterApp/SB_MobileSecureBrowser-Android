@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Smarter Secure Test</string>
+    
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_browser">Secure Browser</string>
+
+    <string name="lbl_recoring">Recording</string>
+    <string name="lbl_speak_now">Speak now&#8239;</string>
+    
+    <string name="lbl_cancel">Cancel</string>
+    <string name="lbl_finished">Finished</string>
+    
+    <string name="url_default_location">http://browser.smarterbalanced.org/landing</string>
+   
+    <!-- Testing -->
+    <string name="url_test_location">http://clients.mindgrub.com/AIR/</string>
+    <string name="url_documentation_location">http://clients.mindgrub.com/AIR/Documentation/</string>
+    
+    <string name="alert_exit_title">Exit Secure Browser?</string>
+    <string name="alert_exit_message">Do you want to exit the secure browser? This will end your session.</string>
+    <string name="alert_btn_exit">Exit</string>
+    <string name="alert_btn_cancel">Cancel</string>
+    
+    <string name="alert_nointernet_message">Sorry you are not online. Please exit and establish a connection.</string>
+    
+    <string name="alert_http404_title">Error Loading Page</string>
+    <string name="alert_http404_message">Unable to load page. Please select reload to try again or exit to quit.</string>
+    <string name="alert_http404_reload">Reload</string>
+    
+    <!-- Softkeyboard -->
+    <!-- Title for Latin keyboard  -->
+    <string name="ime_name">Sample Soft Keyboard</string>
+
+    <!-- Symbols that are commonly considered word separators in this language -->
+    <string name="word_separators">\u0020.,;:!?\n()[]*&amp;@{}/&lt;&gt;_+=|&quot;</string>
+    
+    <!-- Labels on soft keys -->
+    <string name="label_go_key">Go</string>
+    <string name="label_next_key">Next</string>
+    <string name="label_send_key">Send</string>
+
+    <!-- Labels for subtype -->
+    <string name="label_subtype_generic">%s</string>
+    <string name="label_subtype_en_GB">English (GB)</string>
+
+    <!-- Titles for ImePreference -->
+    <string name="settings_name">Keyboard Settings</string>
+    <string name="language_selection_title">Input languages</string>
+    <string name="select_language">Select input languages</string>
+    <string name="general_category">General</string>
+    
+    <!-- Note - This should not be localized -->
+    <string name="pref_default_url">pref_default_url</string>
+    <string name="setting_target_keyboard">com.air.mobilebrowser/.softkeyboard.SoftKeyboard</string>
+    <string name="dialog_keyboard_alert">Please select the &quot;Secure Browser&quot; keyboard before continuing.</string>
+    <string name="dialog_keyboard_alert_title">Change Keyboard</string>
+    <string name="intent_keyboardchange">keyboard_changed</string>
+    <string name="intent_micmutechanged">mic_mute_changed</string>
+	<string name="intent_black_logtag">black_logtag</string>
+    
+	<string-array name="blacklist_apps">
+		<item >com.android.deskclock</item>
+		<item >com.sec.android.app.popupcalculator</item>
+		<item >com.android.email</item>
+		<item >com.sec.minimode.music</item>
+		<item >com.android.calendar</item>
+		<item >com.sec.minimode.taskcloser</item>
+		<item >com.sec.android.app.worldclock</item>
+		<item >com.diotek.mini_penmemo</item>
+	</string-array>
+	
+</resources>

@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:SecureBrowser="http://schemas.android.com/apk/res/com.hsa.hsasecurebrowser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/addressBarWrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:visibility="gone"
+        >
+
+        <Button
+            android:id="@+id/goButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GO"
+            android:layout_alignParentRight="true" 
+            android:minWidth="100dp"/>
+        
+        <EditText
+            android:id="@+id/address_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:hint="Enter a URL"
+            android:imeActionId="90"
+            android:imeActionLabel="Done"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:layout_toLeftOf="@id/goButton" />
+
+        
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/sec_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/handle"
+        android:layout_below="@id/addressBarWrapper"
+        />
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:allowSingleTap="true"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        android:orientation="vertical"
+        android:topOffset="80dp"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:text="Handle" >
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/black"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1px"
+                android:layout_weight="1"
+                android:alwaysDrawnWithCache="true"
+                android:animationCache="true"
+                android:background="@android:color/white" >
+
+                <TextView
+                    android:id="@+id/air_console_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:textSize="9dp" />
+            </ScrollView>
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1px"
+                android:layout_weight="1"
+                android:alwaysDrawnWithCache="true"
+                android:animationCache="true"
+                android:background="@android:color/white" >
+
+                <TextView
+                    android:id="@+id/air_jsconsole_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:textSize="9dp" />
+            </ScrollView>
+
+        </LinearLayout>
+    </SlidingDrawer>
+
+</RelativeLayout>
