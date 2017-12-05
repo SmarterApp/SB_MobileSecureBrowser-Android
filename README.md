@@ -21,7 +21,7 @@
  NOTE: If you prefer using the GUI to install Android tools, you can install Android studio which comes with Android SDK GUI manager.
 
 ## Build Process:
-  * Check out the Android Mobile Browser source code from https://bitbucket.org/sbacoss/smarterapp-android/src
+  * Check out the Android Mobile Browser source code from https://github.com/SmarterApp/SB_MobileSecureBrowser-Android/tree/smarterapp17-18
   * Import the Android Mobile Browser project into Eclipse
       1. Run Eclipse.
       2. Click **File** -> **Import…**, then choose “Existing Android Code into Workspace”, click **next**, and then specify the folder of the source code which you have checked out the source repository. The project will be imported to the Eclipse workspace.
