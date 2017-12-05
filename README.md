@@ -13,8 +13,7 @@
       1. Open Eclipse IDE and choose Help > Install New Software…
       2. Click on Add..., Type **Eclipse ADT Plugin** for Name and http://dl-ssl.google.com/android/eclipse/ for Location and click **OK**.
 
-		![Alt text](images/InstallEclipseADTPlugin.png)
-
+	![Alt text](images/InstallEclipseADTPlugin.png)
 
       3. Select **Developer Tools** and click **next** to install. Agree to license and follow instructions.
       4. Restart Eclipse. Now your system is ready to build the Android Secure Browser.
