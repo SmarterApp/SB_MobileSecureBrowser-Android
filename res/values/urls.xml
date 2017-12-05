@@ -7,8 +7,8 @@
 	</string-array>
 	
 	<string-array name="default_urls">
-	    <item>http://clients.mindgrub.com/AIR/</item>
-	    <item>http://clients.mindgrub.com/AIR/Documentation</item>
+	    <item>http://clients.mindgrub.com/smarterapp/</item>
+	    <item>http://clients.mindgrub.com/smarterapp/Documentation</item>
 	</string-array>
    
 

@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.air.mobilebrowser"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    package="com.smarterapp.mobilebrowser"
+    android:versionCode="8"
+    android:versionName="2.0" >
 
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -19,8 +19,10 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
     <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-sdk
-        android:minSdkVersion="14" android:targetSdkVersion="18"/>
+        android:minSdkVersion="21" android:targetSdkVersion="21"/>
     
     <supports-screens android:smallScreens="false"
                   android:normalScreens="false"
@@ -89,7 +91,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name="com.air.mobilebrowser.ActivityWatchService" >
+        <service android:name="com.smarterapp.mobilebrowser.ActivityWatchService" >
         </service>
     </application>
 

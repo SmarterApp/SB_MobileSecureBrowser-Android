@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Smarter Secure Test</string>
+    <string name="app_name">SmarterAppBrowser</string>
     
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
@@ -11,11 +11,11 @@
     <string name="lbl_cancel">Cancel</string>
     <string name="lbl_finished">Finished</string>
     
-    <string name="url_default_location">http://browser.smarterbalanced.org/landing</string>
+    <string name="url_default_location">https://browser.smarterapp.org/landing/</string>
    
     <!-- Testing -->
-    <string name="url_test_location">http://clients.mindgrub.com/AIR/</string>
-    <string name="url_documentation_location">http://clients.mindgrub.com/AIR/Documentation/</string>
+    <string name="url_test_location">http://clients.mindgrub.com/smarterapp/</string>
+    <string name="url_documentation_location">http://clients.mindgrub.com/smarterapp/Documentation/</string>
     
     <string name="alert_exit_title">Exit Secure Browser?</string>
     <string name="alert_exit_message">Do you want to exit the secure browser? This will end your session.</string>
@@ -52,7 +52,7 @@
     
     <!-- Note - This should not be localized -->
     <string name="pref_default_url">pref_default_url</string>
-    <string name="setting_target_keyboard">com.air.mobilebrowser/.softkeyboard.SoftKeyboard</string>
+    <string name="setting_target_keyboard">com.smarterapp.mobilebrowser/.softkeyboard.SoftKeyboard</string>
     <string name="dialog_keyboard_alert">Please select the &quot;Secure Browser&quot; keyboard before continuing.</string>
     <string name="dialog_keyboard_alert_title">Change Keyboard</string>
     <string name="intent_keyboardchange">keyboard_changed</string>
@@ -68,6 +68,30 @@
 		<item >com.sec.minimode.taskcloser</item>
 		<item >com.sec.android.app.worldclock</item>
 		<item >com.diotek.mini_penmemo</item>
+		<item >com.android.calculator2</item>
+		<item >com.asus.floating.audiowizard</item>
+		<item >com.asus.ap.mydictionary</item>
+		<item >com.asus.floating.videoplayer</item>
+		<item >com.asus.floating.unitconverter</item>
+		<item >com.asus.floating.stopwatch</item>
+		<item >com.asus.floating.compass</item>
+		<item >com.android.browser</item>
+		<item >com.asus.davinci.SNS</item>
+		<item >com.asus.floating.countdown</item>
+		<item >com.android.providers.calender</item>
+		<item >com.asus.supernote</item>
+		<item >com.google.android.talk</item>
+		<item >com.google.android.youtube</item>
+		<item >com.sec.android.app.sbrowser</item>
+		<item >com.sec.android.gallery3d</item>
+		<item >com.sec.android.app.clockpackage</item>
+		<item >com.android.contacts</item>
+		<item >com.sec.android.app.music</item>
+		<item >com.sec.android.app.myfiles</item>
+		<item >com.samsung.everglades.video</item>
+		<item >com.evernote</item>
+		<item >com.google.android.apps.maps</item>
+		<item >com.samsung.android.app.pinboard</item>
 	</string-array>
 	
 </resources>

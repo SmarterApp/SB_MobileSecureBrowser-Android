@@ -1,36 +1,35 @@
-# Welcome to the Mobile Secure Browser (MSB) Project for Android
-The Mobile Secure Browser for Android ensures a common, secure online testing experience by preventing users from switching to other applications and from performing certain hardware actions such as taking screenshots.
+# Building SB10 for Android
 
-## License ##
-This project is licensed under a variety of licenses as documented in the source code.
+## System prerequisites:
+  * Install Eclipse for Java Developers. This was tested with the [Luna Service Release](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunasr2) of the Eclipse IDE for Java EE Developers.
+  * Install SDK tools
+      1. Download Windows command line tools package from https://developer.android.com/studio/index.html
+      2. Extract the zip and place the tools folder in, for example, (C:\Users\username\android-sdks). This same location will be referenced in Eclipse in the following steps.
+      3. On CMD run `cd C:\Users\username\android-sdks\tools\bin`. Using the SDK manager command line utility install the required Android build dependencies
+      4. Install Android platform 5.0.1 (API21) `sdkmanager "platforms;android-21"`
+      5. Install Build tools `sdkmanager "build-tools;22.0.1"`
+      6. Install platform tools `sdkmanager "platform-tools"`
+  * Install Eclipse ADT Plugin
+      1. Open Eclipse IDE and choose Help > Install New Software…
+      2. Click on Add..., Type **Eclipse ADT Plugin** for Name and http://dl-ssl.google.com/android/eclipse/ for Location and click **OK**.
 
-## Getting Involved ##
-We would be happy to receive feedback on its capabilities, problems, or future enhancements:
+		![Alt text](images/InstallEclipseADTPlugin.png)
 
-* For general questions or discussions, including bugs or enhancements, please use the [Forum](http://forum.smarterbalanced.org/viewforum.php?f=17).
-* Feel free to **Fork** this project and develop your changes!
 
-## Build Instructions
-* Install Eclipse for Java Developers with latest Android SDK.
-* For Android SDK, download [Android studio] (https://developer.android.com/sdk/index.html) and add SDK packages.
-    * Keep track of the path to your SDK files, as it will be required later by Eclipse.
-* Clone the source code from this project and import it into Eclipse:
-    * File → Import → General → Existing Projects into Workspace → Next
-    * Select root directory: /path/to/project
-    * Projects → Select All
-    * Uncheck Copy projects into workspace and Add project to working sets
-    * Finish
-* Change the package name and refactor all code to reflect this change (Eclipse can help you do this).
-* Create a directory tree at the root level of the repository named `build/keystore/`
-* Follow the [Android process for signing your app](http://developer.android.com/tools/publishing/app-signing.html) and creating a keystore.
-* Create a keystore named `keystore` and place it in `build/keystore/`
-* In order to differentiate your app from the official app, change its package name. The package name is a string that uniquely identifies each app on the Google Play Store, and is included in the file `AndroidManifest.xml`.
-* Build the project
-    * Choose the project In “Package Explorer”, and then Click “Project” -> “Build Project”. Make sure there are no compile errors.
-    * Note: Sometimes if all the packages are not downloaded correctly, you'll see "project is missing required source folder 'gen'", so make sure you install all the Google APIs. Make sure your "src" folder comes before the "gen" folder. Make sure you always clean your project before you build it.
-* Export the project to apk file. An apk file is the application file to install an application on any Android devices. To create an apk file, follow these steps:
-    * Right click the project, then choose “Export…”, in export destination, choose “Android”->”Export Android Application”
-    * Click “next” and then choose the project
-    * Specify the keystore and password.
-    * Enter the key alias, use the same keystore and password as in the previous step
-    * Specify the folder and the name of the apk file, and press “finish” to complete this procedure (an apk file should be created).
+      3. Select **Developer Tools** and click **next** to install. Agree to license and follow instructions.
+      4. Restart Eclipse. Now your system is ready to build the Android Secure Browser.
+
+ NOTE: If you prefer using the GUI to install Android tools, you can install Android studio which comes with Android SDK GUI manager.
+
+## Build Process:
+  * Check out the Android Mobile Browser source code from https://bitbucket.org/sbacoss/smarterapp-android/src
+  * Import the Android Mobile Browser project into Eclipse
+      1. Run Eclipse.
+      2. Click **File** -> **Import…**, then choose “Existing Android Code into Workspace”, click **next**, and then specify the folder of the source code which you have checked out the source repository. The project will be imported to the Eclipse workspace.
+  * Build the project. Choose the project in “Package Explorer”, and then Click **Project** -> **Build Project**. Make sure there are no compilation errors.
+  * Export the project to an `apk` file. An apk file is the application file to install an application on any Android devices. To create an apk file, follow these steps:
+      1. Right click the project, then choose **Export…**, in export destination, choose **Android**-> **Export** Android Application”
+      2. Click **next** and then choose the project
+      3. Next, you will be asked to specify keystore location (full path) and keystore password.
+      4. You will then be asked to specify key alias, use the same keystore and password as in the previous step and add other certificate details.
+      5. Specify the folder and the name of the apk file, and press “finish” to complete this procedure. An apk file should be created in the given path.
